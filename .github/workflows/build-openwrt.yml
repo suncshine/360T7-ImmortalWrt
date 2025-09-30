@@ -9,19 +9,6 @@
 #
 
 name: Build OpenWrt
-run-name: Build - ${{ inputs.model }}
-
-on:
-  workflow_dispatch:
-    inputs:
-      model:
-        required: true
-        description: Device Model
-        type: choice
-        default: jdcloud_ipq60xx_immwrt
-        options:
-          - 360t7
-          - jcgq30
 
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
